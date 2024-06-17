@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Space Invaders</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Multiplayer space invaders" />
+    <link
+      id="favicon"
+      rel="icon"
+      href="https://glitch.com/edit/favicon-app.ico"
+      type="image/x-icon"
+    />
+    <!-- link to arcade style font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=VT323&display=swap"
+      rel="stylesheet"
+    />
+    <!-- link to stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    <!-- link to Phaser CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/phaser@3.15.1/dist/phaser-arcade-physics.min.js"></script>
+    <!-- link to the script -->
+    <script src="/script.js" defer></script>
+  </head>
+  <body class="index-body">
+    <!--this div will house our game canvas-->
+    <div class="game-div" id="gameContainer"></div>
+
+    //firebase
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyAsqZFDOLC7U8XJpu6FuQH7tHuRgq42NnE",
+          authDomain: "games-948a3.firebaseapp.com",
+          projectId: "games-948a3",
+          storageBucket: "games-948a3.appspot.com",
+          messagingSenderId: "829168849230",
+          appId: "1:829168849230:web:13e5cde656ee5bc2f48e1f",
+          measurementId: "G-0CYX8K10C9"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+      </script>
+  </body>
+</html>
